@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import Documents from "./Documents";
 // import ToggleContent from "./Documents";
 
-import gbr1 from "../assets/abt/gbr1.JPG";
-import gbr2 from "../assets/abt/gbr2.jpg";
-import gbr3 from "../assets/abt/gbr3.jpg";
-import gbr4 from "../assets/abt/gbr4.jpg";
-import gbr5 from "../assets/abt/gbr5.jpg";
+import gbr1 from "/assets/abt/gbr1.JPG";
+import gbr2 from "/assets/abt/gbr2.jpg";
+import gbr3 from "/assets/abt/gbr3.jpg";
+import gbr4 from "/assets/abt/gbr4.jpg";
+import gbr5 from "/assets/abt/gbr5.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const images = [gbr1, gbr2, gbr3, gbr4, gbr5];

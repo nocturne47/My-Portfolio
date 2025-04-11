@@ -4,17 +4,17 @@ import { motion } from "framer-motion";
 
 const images3 = "../src/assets/abt/doc/Trans_2.jpg";
 const images1 = [
-  "../src/assets/abt/doc/Ijazah.jpg",
-  "../src/assets/abt/doc/Trans_1.jpg",
-  "../src/assets/abt/doc/Trans_2.jpg",
+  "public/assets/abt/doc/Ijazah.jpg",
+  "public/assets/abt/doc/Trans_1.jpg",
+  "public/assets/abt/doc/Trans_2.jpg",
 ];
 const images2 = [
-  "../src/assets/abt/doc/ai4s.jpg",
-  "../src/assets/abt/doc/cisco.jpg",
-  "../src/assets/abt/doc/sql.jpg",
-  "../src/assets/abt/doc/visualisasi.jpg",
-  "../src/assets/abt/doc/bmkg.jpg",
-  "../src/assets/abt/doc/sikonek.jpg",
+  "public/assets/abt/doc/ai4s.jpg",
+  "public/assets/abt/doc/cisco.jpg",
+  "public/assets/abt/doc/sql.jpg",
+  "public/assets/abt/doc/visualisasi.jpg",
+  "public/assets/abt/doc/bmkg.jpg",
+  "public/assets/abt/doc/sikonek.jpg",
 ];
 const teks1 = ["Ijazah", "Transkrip_1", "Transkrip_2"];
 const teks2 = [
