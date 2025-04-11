@@ -1,0 +1,159 @@
+.Home {
+  height: 100vh;
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  max-width: 480px;
+}
+.Home .content {
+  text-align: left;
+  width: 75%;
+}
+.Home .content p {
+  padding: 0;
+  margin: 0;
+}
+.Home .content h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 60px;
+  transition: 0.5s;
+}
+.Home .content h1:hover {
+  font-size: 70px;
+  transition: 0.5s;
+  color: blue;
+}
+.pos,
+.Hi {
+  font-size: 20px;
+}
+.loc {
+  font-size: 12px;
+  color: antiquewhite;
+}
+.hde {
+  position: absolute;
+  left: 50%;
+  width: auto;
+  height: 150px;
+  z-index: 10;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.shw {
+  position: absolute;
+  left: 50%;
+  width: auto;
+  height: 150px;
+  z-index: 10;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+.img-background {
+  position: absolute;
+  margin: auto;
+  z-index: -1;
+  height: 40vh;
+  width: 40vh;
+  top: 45%;
+  left: 110px;
+  opacity: 50%;
+}
+/*large mobile (≥ 481px) */
+@media (min-width: 481px) {
+  .Home {
+    max-width: 768px;
+    width: 100%;
+  }
+  .Home .content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 50%;
+    padding: 0 30px;
+    gap: 10px;
+  }
+  .pos {
+    width: 150%;
+  }
+  .img-background {
+    display: block;
+    overflow: visible;
+    position: relative;
+    margin: auto;
+    left: 0px;
+    width: 45vh;
+    height: 45vh;
+  }
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  .Home {
+    /* max-width: 1024px; */
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .Home .content {
+    margin: 0;
+    padding: 0;
+  }
+  .Home .content h1 {
+    font-size: 70px;
+  }
+  .Home .content h1:hover {
+    font-size: 75px;
+  }
+
+  .pos {
+    width: 90%;
+  }
+}
+
+/* Small Laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+  .Home .content {
+    /* max-width: 1280px; */
+    /* padding: 40px; */
+  }
+  .Home .content h1 {
+    font-size: 70px;
+  }
+  .Home .content h1:hover {
+    font-size: 75px;
+  }
+
+  .pos {
+    width: 100%;
+    font-size: 22px;
+  }
+  .Hi {
+    font-size: 22px;
+  }
+  .loc {
+    font-size: 15px;
+    color: antiquewhite;
+  }
+  .img-background {
+    height: 50vh;
+    width: 50vh;
+  }
+}
+
+/* Desktops (≥ 1280px) */
+@media (min-width: 1280px) {
+}

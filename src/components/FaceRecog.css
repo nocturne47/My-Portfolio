@@ -1,0 +1,34 @@
+#FaceRecog {
+  min-height: 100vh;
+}
+#face {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+#FaceRecog h1 {
+  /* margin: auto; */
+  /* padding-bottom: 100px; */
+}
+#cam {
+  position: relative;
+  /* display: inline-block; */
+  /* margin: auto; */
+  border-radius: 90%;
+  /* align-items: center; */
+  height: 300px;
+  width: 300px;
+  /* background-color: aliceblue; */
+}
+#wc {
+  border-radius: 90%;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+#map {
+}

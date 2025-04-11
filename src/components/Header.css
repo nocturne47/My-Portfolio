@@ -1,0 +1,93 @@
+.header {
+  /* display: none; */
+  /* display: inline; */
+  opacity: 60%;
+}
+.header:hover {
+  opacity: 100%;
+  transition: 0.2s ease;
+}
+
+ul {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  right: 15px; /* Aligns to the right edge */
+  top: 100%;
+  transform: translateY(-50%) rotate(90deg); /* Centers it and rotates */
+  transform-origin: right center; /* Ensures proper rotation pivot */
+  background: #232323;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  /* padding: 10px; */
+  z-index: 1000; /* Keeps it above other elements */
+  font-size: 16px;
+  text-decoration: none;
+  gap: 20px;
+  width: 100vh;
+  list-style: none;
+}
+li {
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  color: blue;
+  text-decoration: underline;
+  transition: 0.5s;
+}
+/*large mobile (≥ 481px) */
+@media (min-width: 481px) {
+  ul {
+    right: 20px;
+    font-size: 20px;
+    gap: 25px;
+  }
+  li {
+    margin: 10px 0;
+  }
+}
+
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  .header {
+    max-width: 1200px;
+    position: absolute;
+    z-index: 1000; /* Keeps it above other elements */
+    display: flex; /* Optional: Makes it flexible */
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Aligns content */
+  }
+  ul {
+    transform: translateY(0) rotate(0deg);
+    top: 0px;
+    left: 0px;
+    font-size: 22px;
+    gap: 25px;
+    display: flex;
+    width: 100%;
+
+    margin: 0 auto;
+  }
+  li {
+    margin: 10px 0;
+  }
+  body {
+    padding-top: 60px;
+  }
+}
+
+/* Small Laptops (≥ 1024px) */
+@media (min-width: 1024px) {
+}
+
+/* Desktops (≥ 1280px) */
+@media (min-width: 1280px) {
+}

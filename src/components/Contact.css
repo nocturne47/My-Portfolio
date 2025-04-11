@@ -1,0 +1,138 @@
+.Contact {
+  min-height: 100vh;
+  background-color: white;
+  color: blue;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.cont {
+  display: flex;
+  flex-direction: column; /* Agar elemen tersusun ke bawah */
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+  width: 90%;
+  /* background-color: black; */
+}
+
+.Fill-Box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 1px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 1px;
+  height: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.submit-btn {
+  color: blue;
+  background-color: #ccc;
+}
+.tact {
+  background-color: #000;
+  height: 40vh;
+  display: flex;
+}
+.tact-half {
+  width: 60%;
+  color: #aaa;
+  padding: 30px;
+  margin: auto;
+}
+.tact-half a {
+  color: #66f;
+}
+.tact-half a:hover {
+  color: darkblue;
+}
+.item-icons {
+  display: flex;
+}
+.Cont-Icons {
+  font-size: 24px; /* Adjust the icon size */
+  color: blue; /* Change the icon color */
+  margin: 5px; /* Add spacing between icons */
+}
+
+.pic-cont {
+  width: 40%;
+  height: 100%;
+  background-image: url("../src/assets/background.jpg");
+  background-position-x: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media (min-width: 480px) {
+  .Fill-Box {
+    width: 70vh;
+  }
+}
+/* Tablets (≥ 768px) */
+@media (min-width: 768px) {
+  .Contact {
+    display: flex;
+  }
+  .cont {
+    width: 90%;
+  }
+  .Fill-Box {
+    padding-top: 0;
+    width: 70%;
+  }
+  textarea {
+    height: 100%;
+  }
+  .tact {
+    height: 100vh;
+    width: 60%;
+  }
+  .tact-half {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-image: url("../src/assets/background.jpg");
+    background-position-x: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .pic-cont {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+  .item-icons {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  .cont {
+    width: 100%;
+  }
+  .Fill-Box {
+    width: 80%;
+    max-width: 90vh;
+  }
+}
