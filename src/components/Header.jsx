@@ -1,29 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import { useState } from "react";
 
-function Header() {
-  // const [active, setActive] = useState(false);
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <header className="header">
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#About">About me</a>
-          </li>
-          <li>
-            <a href="#Projects">Projects</a>
-          </li>
-          {/* <li><a href="#FaceRecog">Are you enough?</a></li> */}
-          <li>
-            <a href="#Contact">Contact me</a>
-          </li>
-        </ul>
+      <div className="logo-header" href="#Home">
+        <img src="/favicon.png" alt="" />
+      </div>
+      <nav className={`nav-links ${isOpen ? "open" : ""}`}>
+        <a href="#Home" onClick={closeMenu}>
+          Home
+        </a>
+        <a href="#About" onClick={closeMenu}>
+          About me
+        </a>
+        <a href="#Projects" onClick={closeMenu}>
+          Projects
+        </a>
+        <a href="#Contact" onClick={closeMenu}>
+          Contact me
+        </a>
       </nav>
+
+      <div className="hamburger" onClick={toggleMenu}>
+        {isOpen ? "×" : "☰"}
+      </div>
     </header>
   );
-}
+};
+
 export default Header;

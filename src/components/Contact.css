@@ -79,6 +79,7 @@ textarea {
   background-size: contain;
   background-repeat: no-repeat;
 }
+
 @media (min-width: 480px) {
   .Fill-Box {
     width: 70vh;

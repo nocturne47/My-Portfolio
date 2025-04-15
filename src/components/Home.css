@@ -4,7 +4,7 @@
   display: grid;
   place-items: center;
   width: 100%;
-  max-width: 480px;
+  max-width: 100%px;
 }
 .Home .content {
   text-align: left;
@@ -17,44 +17,23 @@
 .Home .content h1 {
   padding: 0;
   margin: 0;
-  font-size: 60px;
+  font-size: 3.5rem;
   transition: 0.5s;
 }
 .Home .content h1:hover {
-  font-size: 70px;
+  font-size: 4rem;
   transition: 0.5s;
   color: blue;
 }
 .pos,
 .Hi {
-  font-size: 20px;
+  font-size: 1rem;
 }
 .loc {
-  font-size: 12px;
+  font-size: 0.8rem;
   color: antiquewhite;
 }
-.hde {
-  position: absolute;
-  left: 50%;
-  width: auto;
-  height: 150px;
-  z-index: 10;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-.shw {
-  position: absolute;
-  left: 50%;
-  width: auto;
-  height: 150px;
-  z-index: 10;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-}
+
 .img-background {
   position: absolute;
   margin: auto;
@@ -62,13 +41,15 @@
   height: 40vh;
   width: 40vh;
   top: 45%;
-  left: 110px;
+  left: 22vw;
   opacity: 50%;
+}
+@media (max-width: 375) {
 }
 /*large mobile (≥ 481px) */
 @media (min-width: 481px) {
   .Home {
-    max-width: 768px;
+    /* max-width: 768px; */
     width: 100%;
   }
   .Home .content {
