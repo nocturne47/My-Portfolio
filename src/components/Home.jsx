@@ -8,18 +8,20 @@ function Home() {
   return (
     <div className="Home" id="Home">
       <div className="content" data-aos="fade-right">
-        <p className="Hi">Hi, I am</p>
-        <h1>Ferdinand Immanuel</h1>
-        <p className="pos">Junior Developer / Electrical Engineer</p>
-        <a
-          className="loc"
-          href="https://maps.app.goo.gl/bTnenDfQrVPEGBdi9"
-          onMouseEnter={() => setHovered(true)}
-          onMouseLeave={() => setHovered(false)}
-          target="_blank"
-        >
-          Bogor Regency, Indonesia
-        </a>
+        <div className="contentext">
+          <p className="Hi">Hi, I am</p>
+          <h1>Ferdinand Immanuel</h1>
+          <p className="pos">Junior Developer / Electrical Engineer</p>
+          <a
+            className="loc"
+            href="https://maps.app.goo.gl/bTnenDfQrVPEGBdi9"
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            target="_blank"
+          >
+            Bogor Regency, Indonesia
+          </a>
+        </div>
       </div>
       <div className="Image-Mot" data-aos="fade-left">
         <motion.img
