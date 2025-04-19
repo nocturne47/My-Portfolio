@@ -50,8 +50,8 @@
 }
 
 .img-background {
-  height: 12rem;
-  width: 12rem;
+  height: 11rem;
+  width: 11rem;
   opacity: 70%;
 }
 @media (max-width: 376px) {
@@ -73,8 +73,8 @@
     color: antiquewhite;
   }
   .img-background {
-    height: 11rem;
-    width: 11rem;
+    height: 30vh;
+    width: 30vh;
   }
 }
 /*large mobile (≥ 481px) */
