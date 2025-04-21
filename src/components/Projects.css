@@ -5,7 +5,7 @@
 }
 .Projects {
   background-color: black;
-  padding-top: 12vh;
+  padding: 12vh 0;
   /* max-height: 100vh; */
 }
 #proje-titel {

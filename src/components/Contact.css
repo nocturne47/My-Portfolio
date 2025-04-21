@@ -1,10 +1,13 @@
 .Contact {
-  min-height: 100vh;
   background-color: white;
   color: blue;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .cont {
@@ -14,30 +17,32 @@
   text-align: center;
   align-items: center;
   height: 100vh;
-  width: 90%;
+  max-width: 90%;
+  padding-bottom: 2rem;
+
   /* background-color: black; */
 }
 
 .Fill-Box {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 0.6rem; */
 }
 input {
-  width: 100%;
-  padding: 10px;
-  margin: 1px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  width: 90%;
+  padding: 0.6rem;
+  margin: 0.06rem;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.3rem;
 }
 
 textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 1px;
+  width: 90%;
+  padding: 0.6rem;
+  margin: 0.06rem;
   height: 80%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 0.06rem solid #ccc;
+  border-radius: 0.3rem;
   justify-content: center;
   align-items: center;
 }
@@ -53,7 +58,7 @@ textarea {
 .tact-half {
   width: 60%;
   color: #aaa;
-  padding: 30px;
+  padding: 1.1rem;
   margin: auto;
 }
 .tact-half a {
@@ -66,36 +71,47 @@ textarea {
   display: flex;
 }
 .Cont-Icons {
-  font-size: 24px; /* Adjust the icon size */
+  font-size: 1.5rem; /* Adjust the icon size */
   color: blue; /* Change the icon color */
-  margin: 5px; /* Add spacing between icons */
+  margin: 0.3rem; /* Add spacing between icons */
 }
 
 .pic-cont {
-  width: 40%;
+  width: 100%;
   height: 100%;
   background-image: url("/assets/background.jpg");
   background-position-x: center;
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
 }
-
+@media (max-width: 376px) {
+  .cont h1 {
+    font-size: xx-large;
+  }
+  .cont p {
+    font-size: x-small;
+  }
+}
 @media (min-width: 480px) {
   .Fill-Box {
     width: 70vh;
+  }
+  .tact {
+    width: 100%;
   }
 }
 /* Tablets (≥ 768px) */
 @media (min-width: 768px) {
   .Contact {
-    display: flex;
+    flex-direction: row;
   }
   .cont {
     width: 90%;
+    height: auto;
   }
   .Fill-Box {
     padding-top: 0;
-    width: 70%;
+    width: 80%;
   }
   textarea {
     height: 100%;
@@ -112,10 +128,10 @@ textarea {
     align-items: flex-end;
     text-align: right;
     margin: 0 auto;
-    margin-top: 50px;
-    background-image: url("../src/assets/background.jpg");
+    margin-top: 3rem;
+    background-image: url("/assets/background.jpg");
     background-position-x: center;
-    background-size: contain;
+    /* background-size: contain; */
     background-repeat: no-repeat;
   }
   .pic-cont {

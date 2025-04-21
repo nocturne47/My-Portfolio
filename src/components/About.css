@@ -18,15 +18,15 @@
 .About .imagesab .about-img {
   /* margin-left: auto;
   margin-right: auto; */
-  height: 30vh;
-  width: 30vh;
+  height: 10rem;
+  width: 10rem;
   padding: 0.3rem;
   border-top-right-radius: 30%;
   border-bottom-right-radius: 30%;
 }
 .About .about-img:hover {
-  height: 35vh;
-  width: 35vh;
+  height: 11rem;
+  width: 11rem;
 }
 
 .abcontent {
@@ -67,16 +67,16 @@
     /* margin-left: auto;
     margin-right: auto; */
     margin: auto;
-    height: 40vh;
-    width: 40vh;
+    height: 12rem;
+    width: 12rem;
     padding: 0.3rem;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
     border-radius: 30%;
   }
   .About .imagesab .about-img:hover {
-    height: 45vh;
-    width: 45vh;
+    height: 13rem;
+    width: 13rem;
   }
   .contentab-par {
     max-width: 85vh;
@@ -121,12 +121,12 @@
     padding: 0;
   }
   .About .imagesab .about-img {
-    height: 45vh;
-    width: 45vh;
+    height: 16rem;
+    width: 16rem;
   }
   .About .imagesab .about-img:hover {
-    height: 50vh;
-    width: 50vh;
+    height: 17rem;
+    width: 17rem;
   }
   .contentab-par {
     order: 1;
@@ -153,12 +153,12 @@
     min-height: 55vh;
   }
   .About .imagesab .about-img {
-    height: 50vh;
-    width: 50vh;
+    height: 17rem;
+    width: 17rem;
   }
   .About .imagesab .about-img:hover {
-    height: 55vh;
-    width: 55vh;
+    height: 18rem;
+    width: 18rem;
   }
   .contentab-par p {
     font-size: 1.1rem;
@@ -175,5 +175,13 @@
   }
   .contentab-par p {
     font-size: 1.2rem;
+  }
+  .About .imagesab .about-img {
+    height: 19rem;
+    width: 19rem;
+  }
+  .About .imagesab .about-img:hover {
+    height: 20rem;
+    width: 20rem;
   }
 }
