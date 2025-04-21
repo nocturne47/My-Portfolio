@@ -5,22 +5,22 @@
 }
 .Projects {
   background-color: black;
-  padding: 10px;
+  padding-top: 11vh;
   max-height: 100vh;
 }
 #proje-titel {
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
 #proje-titel p {
-  padding-top: 15px;
-  padding-left: 5px;
+  padding-top: 0.8rem;
+  padding-left: 0.3rem;
   font-size: x-small;
-  max-width: 120px;
+  max-width: 7.5rem;
   text-align: left;
 }
 
@@ -58,8 +58,8 @@
   color: #999;
 }
 .fixed-media {
-  width: 300px;
-  height: 240px; /* Set desired height */
+  width: 18.75rem;
+  /* height: 15rem;  */
   overflow: auto; /* Hide any overflow to maintain shape */
 }
 
@@ -92,31 +92,56 @@
 
 .below {
   transition: 0.5s ease-in-out;
-  width: 300px;
+  width: 18.75rem;
 }
 
 .proj-tech {
   display: inline-block;
-  margin: 5px;
+  margin: 0.3rem;
 }
 .proj-tech p {
   display: inline;
-  margin: 5px;
+  margin: 0.3rem;
 }
 .proj-tech svg {
-  margin: 5px;
+  margin: 0.3rem;
 }
 .proj-tech svg {
   border-radius: 50%;
   display: inline;
-
-  margin: 5px;
+  margin: 0.3rem;
 }
 .proj-tech svg:hover {
-  height: 25px;
-  width: 25px;
-  margin: 0px;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0;
   /* z-index: -9999; */
+}
+
+@media (max-width: 376px) {
+  #proje-titel h1 {
+    font-size: xx-large;
+  }
+  #proje-titel p {
+    font-size: xx-small;
+    padding-top: 0;
+    text-align: justify;
+    width: 35%;
+  }
+  .proj-img {
+    /* margin: 2rem; */
+    max-width: 100vw;
+  }
+  .proj-img-all,
+  .Coba {
+    width: 100%;
+    /* padding: 1rem 0; */
+    max-width: 100vw;
+  }
+  .below {
+    width: 90%;
+    padding: 1rem;
+  }
 }
 /* big mobile (≥ 1px) */
 @media (min-width: 481px) {
@@ -129,8 +154,8 @@
   }
   #proje-titel {
     flex-direction: column;
-    padding: 50px;
-    padding-bottom: 0px;
+    padding: 3rem;
+    padding-bottom: 0;
   }
 
   #proje-titel p {
@@ -153,13 +178,13 @@
   /* ...?? */
   .Coba {
     width: 40%;
-    margin: 10px;
+    margin: 0.6rem;
   }
 
   /* ...?? */
   .gbr-tit {
     /* width: 400px; */
-    height: 300px;
+    height: 18.75rem;
   }
 }
 
@@ -171,7 +196,7 @@
   }
   .fixed-media,
   .below {
-    width: 450px;
+    width: 28.125rem;
     height: auto;
   }
   .Coba {
